@@ -1,0 +1,128 @@
+suppress gen_id 1, sig_id 536
+suppress gen_id 1, sig_id 648
+suppress gen_id 1, sig_id 8375
+suppress gen_id 1, sig_id 11192
+suppress gen_id 1, sig_id 12286
+suppress gen_id 1, sig_id 15147
+suppress gen_id 1, sig_id 15306
+suppress gen_id 1, sig_id 15362
+suppress gen_id 1, sig_id 17458
+suppress gen_id 1, sig_id 20583
+suppress gen_id 1, sig_id 2000334
+suppress gen_id 1, sig_id 2010516
+suppress gen_id 1, sig_id 2012088
+suppress gen_id 1, sig_id 2013222
+suppress gen_id 1, sig_id 2014819
+suppress gen_id 1, sig_id 2014520
+suppress gen_id 1, sig_id 2101390
+suppress gen_id 1, sig_id 2103134
+suppress gen_id 1, sig_id 2500056
+suppress gen_id 119, sig_id 2
+suppress gen_id 119, sig_id 4
+suppress gen_id 119, sig_id 14
+suppress gen_id 119, sig_id 31
+suppress gen_id 119, sig_id 32
+suppress gen_id 120, sig_id 2
+suppress gen_id 120, sig_id 3
+suppress gen_id 120, sig_id 4
+suppress gen_id 120, sig_id 6
+suppress gen_id 120, sig_id 8
+suppress gen_id 120, sig_id 9
+suppress gen_id 122, sig_id 19
+suppress gen_id 122, sig_id 21
+suppress gen_id 122, sig_id 22
+suppress gen_id 122, sig_id 23
+suppress gen_id 122, sig_id 26
+suppress gen_id 137, sig_id 1
+# gen_id_1
+#"GPL SHELLCODE x86 NOOP"
+#GPL SHELLCODE x86 0x90 unicode NOOP
+suppress gen_id 1, sig_id 653
+# This set of instructions can be used as a NOOP to pad buffers on an x86 architecture machines. 
+suppress gen_id 1, sig_id 1390
+suppress gen_id 1, sig_id 2452
+# FILE-IDENTIFY download of executable content -> stops file downloads
+# This event indicates that a portable executable file has been downloaded. 
+# FILE-IDENTIFY download of executable content - x-header  -> stops windows download
+suppress gen_id 1, sig_id 16313
+#WEB-CLIENT Microsoft Internet Explorer userdata behavior memory corruption attempt
+suppress gen_id 1, sig_id 16482
+suppress gen_id 1, sig_id 23098
+#"ET TFTP Outbound TFTP Read Request" -- VONAGE
+suppress gen_id 1, sig_id 2008120
+#ET SHELLCODE Common 0a0a0a0a Heap Spray String
+suppress gen_id 1, sig_id 2012252
+suppress gen_id 1, sig_id 2012758
+#ET INFO EXE - OSX Disk Image Download
+suppress gen_id 1, sig_id 2014518
+#ET INFO PDF Using CCITTFax Filter
+suppress gen_id 1, sig_id 2015561
+suppress gen_id 1, sig_id 2100366
+suppress gen_id 1, sig_id 2100368
+#GPL SHELLCODE x86 stealth NOOP
+suppress gen_id 1, sig_id 2100651
+#GPL SHELLCODE x86 0xEB0C NOOP
+suppress gen_id 1, sig_id 2101424
+suppress gen_id 1, sig_id 2102314
+suppress gen_id 1, sig_id 100000230
+#
+#WEB-CLIENT libpng malformed chunk denial of service attempt
+suppress gen_id 3, sig_id 14772
+#(http_inspect) DOUBLE DECODING ATTACK
+#(http_inspect) NON-RFC DEFINED CHAR
+# HTTP Inspect Errors
+suppress gen_id 120, sig_id 10
+#(spp_frag3) Bogus fragmentation packet. Possible BSD attack
+suppress gen_id 123, sig_id 10
+# Sensitive Data disable
+# Credit Card Numbers
+suppress gen_id 138, sig_id 2
+# U.S. Social Security Numbers (with dashes)
+suppress gen_id 138, sig_id 3
+# U.S. Social Security Numbers (w/out dashes)
+suppress gen_id 138, sig_id 4
+# Email Addresses
+suppress gen_id 138, sig_id 5
+# U.S. Phone Numbers
+suppress gen_id 138, sig_id 6
+suppress gen_id 1, sig_id 23256
+suppress gen_id 1, sig_id 24889
+suppress gen_id 1, sig_id 2000419
+suppress gen_id 1, sig_id 2003195
+suppress gen_id 1, sig_id 2008578
+suppress gen_id 1, sig_id 2010935
+suppress gen_id 1, sig_id 2010937
+suppress gen_id 1, sig_id 2011716
+suppress gen_id 1, sig_id 2012086
+suppress gen_id 1, sig_id 2012087
+suppress gen_id 1, sig_id 2012089
+suppress gen_id 1, sig_id 2012141
+suppress gen_id 1, sig_id 2013414
+suppress gen_id 1, sig_id 2014726
+suppress gen_id 1, sig_id 2103192
+suppress gen_id 1, sig_id 2013504
+suppress gen_id 1, sig_id 2406003
+suppress gen_id 1, sig_id 2406067
+suppress gen_id 1, sig_id 2406069
+suppress gen_id 1, sig_id 2406424
+#(http_inspect) BARE BYTE UNICODE ENCODING
+#(http_inspect) IIS UNICODE CODEPOINT ENCODING
+suppress gen_id 119, sig_id 7
+#(http_inspect) NON-RFC DEFINED CHAR [**]
+#(http_inspect) UNKNOWN METHOD
+#(http_inspect) SIMPLE REQUEST
+#(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE
+#(http_inspect) HTTP RESPONSE HAS UTF CHARSET WHICH FAILED TO NORMALIZE
+#(http_inspect) HTTP RESPONSE GZIP DECOMPRESSION FAILED
+#(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE
+#(http_inspect) JAVASCRIPT OBFUSCATION LEVELS EXCEEDS 1
+# Unknown
+#(smtp) Attempted response buffer overflow: 1448 chars
+suppress gen_id 124, sig_id 3
+#(ftp_telnet) Invalid FTP Command
+suppress gen_id 125, sig_id 2
+#(ssp_ssl) Invalid Client HELLO after Server HELLO Detected
+#(spp_sip) Maximum dialogs within a session reached
+suppress gen_id 140, sig_id 27
+#(IMAP) Unknown IMAP4 command
+suppress gen_id 141, sig_id 1
