@@ -19,15 +19,18 @@ suppress gen_id 1, sig_id 2103134
 suppress gen_id 1, sig_id 2500056
 suppress gen_id 119, sig_id 2
 suppress gen_id 119, sig_id 4
+suppress gen_id 119, sig_id 7
 suppress gen_id 119, sig_id 14
 suppress gen_id 119, sig_id 31
 suppress gen_id 119, sig_id 32
+suppress gen_id 119, sig_id 33
 suppress gen_id 120, sig_id 2
 suppress gen_id 120, sig_id 3
 suppress gen_id 120, sig_id 4
 suppress gen_id 120, sig_id 6
 suppress gen_id 120, sig_id 8
 suppress gen_id 120, sig_id 9
+suppress gen_id 120, sig_id 10
 suppress gen_id 122, sig_id 19
 suppress gen_id 122, sig_id 21
 suppress gen_id 122, sig_id 22
@@ -65,7 +68,6 @@ suppress gen_id 1, sig_id 2100651
 suppress gen_id 1, sig_id 2101424
 suppress gen_id 1, sig_id 2102314
 suppress gen_id 1, sig_id 100000230
-#
 #WEB-CLIENT libpng malformed chunk denial of service attempt
 suppress gen_id 3, sig_id 14772
 #(http_inspect) DOUBLE DECODING ATTACK
@@ -89,10 +91,10 @@ suppress gen_id 1, sig_id 23256
 suppress gen_id 1, sig_id 24889
 suppress gen_id 1, sig_id 2000419
 suppress gen_id 1, sig_id 2003195
-suppress gen_id 1, sig_id 2008578
+# suppress gen_id 1, sig_id 2008578
 suppress gen_id 1, sig_id 2010935
 suppress gen_id 1, sig_id 2010937
-suppress gen_id 1, sig_id 2011716
+# suppress gen_id 1, sig_id 2011716
 suppress gen_id 1, sig_id 2012086
 suppress gen_id 1, sig_id 2012087
 suppress gen_id 1, sig_id 2012089
@@ -122,7 +124,64 @@ suppress gen_id 124, sig_id 3
 #(ftp_telnet) Invalid FTP Command
 suppress gen_id 125, sig_id 2
 #(ssp_ssl) Invalid Client HELLO after Server HELLO Detected
+#(spp_sip) Empty request URI
+suppress gen_id 140, sig_id 2
 #(spp_sip) Maximum dialogs within a session reached
 suppress gen_id 140, sig_id 27
+#(spp_sip) URI is too long
+suppress gen_id 140, sig_id 3
 #(IMAP) Unknown IMAP4 command
 suppress gen_id 141, sig_id 1
+#(IMAP) Unknown IMAP4 response
+suppress gen_id 141, sig_id 2
+
+#ET POLICY PE EXE or DLL Windows file download HTTP
+suppress gen_id 1, sig_id 2018959
+#ET POLICY HTTP traffic on port 443 (POST)
+suppress gen_id 1, sig_id 2013926
+#ET POLICY Data POST to an image file (gif)
+suppress gen_id 1, sig_id 2010066
+#ET INFO Session Traversal Utilities for NAT (STUN Binding Response)
+suppress gen_id 1, sig_id 2016150
+#ET INFO Session Traversal Utilities for NAT (STUN Binding Request)
+suppress gen_id 1, sig_id 2016149
+#ET POLICY Dropbox.com Offsite File Backup in Use
+suppress gen_id 1, sig_id 2012647
+#ET POLICY Logmein.com/Join.me SSL Remote Control Access
+suppress gen_id 1, sig_id 2014756
+#ET POLICY Pandora Usage
+suppress gen_id 1, sig_id 2014997
+#ET POLICY iTunes User Agent
+suppress gen_id 1, sig_id 2002878
+#ET POLICY Windows-Based OpenSSL Tunnel Outbound
+suppress gen_id 1, sig_id 2012078
+#ET POLICY Executable and linking format (ELF) file download
+suppress gen_id 1, sig_id 2000418
+#ET POLICY Carbonite.com Backup Software User-Agent (Carbonite Installer)
+suppress gen_id 1, sig_id 2009801
+#ET POLICY TeamViewer Dyngate User-Agent
+suppress gen_id 1, sig_id 2009475
+#ET POLICY Internal Host Retrieving External IP via ipchicken.com - Possible Infection
+suppress gen_id 1, sig_id 2009020
+#ET POLICY Internal Host Retrieving External IP via showmyip.com - Possible Infection
+suppress gen_id 1, sig_id 2008989
+#ET POLICY Internal Host Retrieving External IP via cmyip.com - Possible Infection
+suppress gen_id 1, sig_id 2008988
+#ET POLICY Internal Host Retrieving External IP via showip.net - Possible Infection
+suppress gen_id 1, sig_id 2008987
+#ET POLICY Internal Host Retrieving External IP via whatismyip.com - Possible Infection
+suppress gen_id 1, sig_id 2008986
+#ET POLICY Internal Host Retrieving External IP via whatismyip.com Automation Page - Possible Infection
+suppress gen_id 1, sig_id 2008985
+#ET POLICY Logmein.com Host List Download
+suppress gen_id 1, sig_id 2007765
+#ET POLICY Logmein.com Update Activity
+suppress gen_id 1, sig_id 2007766
+#ET POLICY Microsoft TEREDO IPv6 tunneling
+suppress gen_id 1, sig_id 2003155
+#ET POLICY Netflix On-demand User-Agent
+suppress gen_id 1, sig_id 2007638
+#ET POLICY TeamViewer Keep-alive outbound
+suppress gen_id 1, sig_id 2008794
+#ET POLICY TeamViewer Keep-alive inbound
+suppress gen_id 1, sig_id 2008795
