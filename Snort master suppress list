@@ -1,140 +1,173 @@
+#This event is generated when an attempt is made to gain access to private resources using Samba.
 suppress gen_id 1, sig_id 536
+#GPL SHELLCODE x86 NOOP
 suppress gen_id 1, sig_id 648
-suppress gen_id 1, sig_id 8375
-suppress gen_id 1, sig_id 11192
-suppress gen_id 1, sig_id 12286
-suppress gen_id 1, sig_id 15147
-suppress gen_id 1, sig_id 15306
-suppress gen_id 1, sig_id 15362
-suppress gen_id 1, sig_id 17458
-suppress gen_id 1, sig_id 20583
-suppress gen_id 1, sig_id 2000334
-suppress gen_id 1, sig_id 2010516
-suppress gen_id 1, sig_id 2012088
-suppress gen_id 1, sig_id 2013222
-suppress gen_id 1, sig_id 2014819
-suppress gen_id 1, sig_id 2014520
-suppress gen_id 1, sig_id 2101390
-suppress gen_id 1, sig_id 2103134
-suppress gen_id 1, sig_id 2500056
-suppress gen_id 119, sig_id 2
-suppress gen_id 119, sig_id 4
-suppress gen_id 119, sig_id 7
-suppress gen_id 119, sig_id 14
-suppress gen_id 119, sig_id 31
-suppress gen_id 119, sig_id 32
-suppress gen_id 119, sig_id 33
-suppress gen_id 120, sig_id 2
-suppress gen_id 120, sig_id 3
-suppress gen_id 120, sig_id 4
-suppress gen_id 120, sig_id 6
-suppress gen_id 120, sig_id 8
-suppress gen_id 120, sig_id 9
-suppress gen_id 120, sig_id 10
-suppress gen_id 122, sig_id 19
-suppress gen_id 122, sig_id 21
-suppress gen_id 122, sig_id 22
-suppress gen_id 122, sig_id 23
-suppress gen_id 122, sig_id 26
-suppress gen_id 137, sig_id 1
-# gen_id_1
-#"GPL SHELLCODE x86 NOOP"
 #GPL SHELLCODE x86 0x90 unicode NOOP
 suppress gen_id 1, sig_id 653
-# This set of instructions can be used as a NOOP to pad buffers on an x86 architecture machines. 
+#This set of instructions can be used as a NOOP to pad buffers on an x86 architecture machines. 
 suppress gen_id 1, sig_id 1390
-suppress gen_id 1, sig_id 2452
-# FILE-IDENTIFY download of executable content -> stops file downloads
-# This event indicates that a portable executable file has been downloaded. 
-# FILE-IDENTIFY download of executable content - x-header  -> stops windows download
+#This event is generated when an attempt is made to return to a web client a file with a Class ID (CLSID) embedded in the file.
+suppress gen_id 1, sig_id 8375
+#This event is generated when network traffic that indicates download of executable content is being used.
+suppress gen_id 1, sig_id 11192
+#This event is generated when an attempt is made to exploit a known vulnerability in Safari.
+suppress gen_id 1, sig_id 12286
+#This event is generated when an attempt is made to exploit a known vulnerability in an ActiveX control.
+suppress gen_id 1, sig_id 15147
+#This rule generates events when a portable executable file is downloaded.
+suppress gen_id 1, sig_id 15306
+#This event is generated when obfuscated javascript containing excessive fromCharCode is detected.
+suppress gen_id 1, sig_id 15362
+#FILE-IDENTIFY download of executable content - x-header  -> stops windows download
 suppress gen_id 1, sig_id 16313
 #WEB-CLIENT Microsoft Internet Explorer userdata behavior memory corruption attempt
 suppress gen_id 1, sig_id 16482
+#This event is generated when an attempt is made to exploit a known vulnerability in internet security.
+suppress gen_id 1, sig_id 17458
+#This event is generated when an attempt is made to exploit a known vulnerability in firefox.
+suppress gen_id 1, sig_id 20583
+#This event is generated when an attempt is made to exploit a known vulnerability in adobe air.
 suppress gen_id 1, sig_id 23098
-#"ET TFTP Outbound TFTP Read Request" -- VONAGE
+#FILE-IDENTIFY Armadillo v1.71 packer file magic detected
+suppress gen_id 1, sig_id 23256
+#This event is generated when an attempt is made to exploit a known vulnerability in adobe air.
+suppress gen_id 1, sig_id 24889
+#ET P2P? BitTorrent? peer sync
+suppress gen_id 1, sig_id 2000334
+#ET WEB_CLIENT Possible HTTP 403 XSS Attempt (External Source)
+suppress gen_id 1, sig_id 2010516
+#ET SHELLCODE Possible Call with No Offset TCP Shellcode
+suppress gen_id 1, sig_id 2012088
+#ET SHELLCODE Excessive Use of HeapLib? Objects Likely Malicious Heap Spray Attempt
+suppress gen_id 1, sig_id 2013222
+#ET INFO Packed Executable Download
+suppress gen_id 1, sig_id 2014819
+#ET INFO EXE - Served Attached HTTP
+suppress gen_id 1, sig_id 2014520
+#GPL SHELLCODE x86 inc ebx NOOP
+suppress gen_id 1, sig_id 2101390
+#GPL WEB_CLIENT PNG large colour depth download attempt
+suppress gen_id 1, sig_id 2103134
+#ET POLICY PE EXE or DLL Windows file download
+suppress gen_id 1, sig_id 2000419
+#ET POLICY Unusual number of DNS No Such Name Responses
+suppress gen_id 1, sig_id 2003195
+#ET POLICY Suspicious inbound to MSSQL port 1433
+suppress gen_id 1, sig_id 2010935
+#ET POLICY Suspicious inbound to mySQL port 3306
+suppress gen_id 1, sig_id 2010937
+#ET SHELLCODE Possible Call with No Offset TCP Shellcode
+suppress gen_id 1, sig_id 2012086
+#ET SHELLCODE Possible Call with No Offset UDP Shellcode
+suppress gen_id 1, sig_id 2012087
+#ET SHELLCODE Possible Call with No Offset UDP Shellcode
+suppress gen_id 1, sig_id 2012089
+#ET POLICY Protocol 41 IPv6 encapsulation potential 6in4 IPv6 tunnel active
+suppress gen_id 1, sig_id 2012141
+#ET POLICY Executable served from Amazon S3
+suppress gen_id 1, sig_id 2013414
+#ET POLICY Outdated Windows Flash Version IE
+suppress gen_id 1, sig_id 2014726
+#ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management
+suppress gen_id 1, sig_id 2013504
+#BLEEDING-EDGE RBN Known Russian Business Network Traffic - Known Trojan C&Cs (bleeding-rbn.rules)
+suppress gen_id 1, sig_id 2406003
+#ET RBN Known Russian Business Network Monitored Domains
+suppress gen_id 1, sig_id 2406067
+#ET RBN Known Russian Business Network Monitored Domains
+suppress gen_id 1, sig_id 2406069
+#ET TFTP Outbound TFTP Read Request -- VONAGE
 suppress gen_id 1, sig_id 2008120
 #ET SHELLCODE Common 0a0a0a0a Heap Spray String
 suppress gen_id 1, sig_id 2012252
+#ET INFO DYNAMIC_DNS Query to *.dyndns. Domain
 suppress gen_id 1, sig_id 2012758
 #ET INFO EXE - OSX Disk Image Download
 suppress gen_id 1, sig_id 2014518
 #ET INFO PDF Using CCITTFax Filter
 suppress gen_id 1, sig_id 2015561
+#GPL ICMP_INFO PING *NIX
 suppress gen_id 1, sig_id 2100366
+#GPL ICMP_INFO
 suppress gen_id 1, sig_id 2100368
 #GPL SHELLCODE x86 stealth NOOP
 suppress gen_id 1, sig_id 2100651
 #GPL SHELLCODE x86 0xEB0C NOOP
 suppress gen_id 1, sig_id 2101424
+#GPL SHELLCODE x86 0x90 NOOP unicode
 suppress gen_id 1, sig_id 2102314
-suppress gen_id 1, sig_id 100000230
 #WEB-CLIENT libpng malformed chunk denial of service attempt
 suppress gen_id 3, sig_id 14772
 #(http_inspect) DOUBLE DECODING ATTACK
-#(http_inspect) NON-RFC DEFINED CHAR
-# HTTP Inspect Errors
-suppress gen_id 120, sig_id 10
-#(spp_frag3) Bogus fragmentation packet. Possible BSD attack
-suppress gen_id 123, sig_id 10
-# Sensitive Data disable
-# Credit Card Numbers
-suppress gen_id 138, sig_id 2
-# U.S. Social Security Numbers (with dashes)
-suppress gen_id 138, sig_id 3
-# U.S. Social Security Numbers (w/out dashes)
-suppress gen_id 138, sig_id 4
-# Email Addresses
-suppress gen_id 138, sig_id 5
-# U.S. Phone Numbers
-suppress gen_id 138, sig_id 6
-suppress gen_id 1, sig_id 23256
-suppress gen_id 1, sig_id 24889
-suppress gen_id 1, sig_id 2000419
-suppress gen_id 1, sig_id 2003195
-# suppress gen_id 1, sig_id 2008578
-suppress gen_id 1, sig_id 2010935
-suppress gen_id 1, sig_id 2010937
-# suppress gen_id 1, sig_id 2011716
-suppress gen_id 1, sig_id 2012086
-suppress gen_id 1, sig_id 2012087
-suppress gen_id 1, sig_id 2012089
-suppress gen_id 1, sig_id 2012141
-suppress gen_id 1, sig_id 2013414
-suppress gen_id 1, sig_id 2014726
-suppress gen_id 1, sig_id 2103192
-suppress gen_id 1, sig_id 2013504
-suppress gen_id 1, sig_id 2406003
-suppress gen_id 1, sig_id 2406067
-suppress gen_id 1, sig_id 2406069
-suppress gen_id 1, sig_id 2406424
+suppress gen_id 119, sig_id 2
 #(http_inspect) BARE BYTE UNICODE ENCODING
+suppress gen_id 119, sig_id 4
 #(http_inspect) IIS UNICODE CODEPOINT ENCODING
 suppress gen_id 119, sig_id 7
 #(http_inspect) NON-RFC DEFINED CHAR [**]
+suppress gen_id 119, sig_id 14
 #(http_inspect) UNKNOWN METHOD
+suppress gen_id 119, sig_id 31
 #(http_inspect) SIMPLE REQUEST
+suppress gen_id 119, sig_id 32
+#(http_inspect) UNESCAPED SPACE IN HTTP URI
+suppress gen_id 119, sig_id 33
 #(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE
+suppress gen_id 120, sig_id 2
+#(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE
+suppress gen_id 120, sig_id 3
 #(http_inspect) HTTP RESPONSE HAS UTF CHARSET WHICH FAILED TO NORMALIZE
+suppress gen_id 120, sig_id 4
 #(http_inspect) HTTP RESPONSE GZIP DECOMPRESSION FAILED
+suppress gen_id 120, sig_id 6
 #(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE
+suppress gen_id 120, sig_id 8
 #(http_inspect) JAVASCRIPT OBFUSCATION LEVELS EXCEEDS 1
-# Unknown
+suppress gen_id 120, sig_id 9
+#(http_inspect) JAVASCRIPT WHITESPACES EXCEEDS MAX ALLOWED
+suppress gen_id 120, sig_id 10
+#(http_inspect) MULTIPLE ENCODINGS WITHIN JAVASCRIPT OBFUSCATED DATA
+suppress gen_id 120, sig_id 11
+#(portscan) UDP PORTSWEEP
+suppress gen_id 122, sig_id 19
+#(portscan) UDP Filtered Portscan
+suppress gen_id 122, sig_id 21
+#(portscan) UDP Filtered Decoy Portscan
+suppress gen_id 122, sig_id 22
+#(portscan) UDP PORTSWEEP FILTERED
+suppress gen_id 122, sig_id 23
+#(portscan) ICMP PORTSWEEP FILTERED
+suppress gen_id 122, sig_id 26
+#(spp_frag3) Bogus fragmentation packet. Possible BSD attack
+suppress gen_id 123, sig_id 10
 #(smtp) Attempted response buffer overflow: 1448 chars
 suppress gen_id 124, sig_id 3
 #(ftp_telnet) Invalid FTP Command
 suppress gen_id 125, sig_id 2
 #(ssp_ssl) Invalid Client HELLO after Server HELLO Detected
+suppress gen_id 137, sig_id 1
+## Sensitive Data disable
+#Credit Card Numbers
+suppress gen_id 138, sig_id 2
+#U.S. Social Security Numbers (with dashes)
+suppress gen_id 138, sig_id 3
+#U.S. Social Security Numbers (w/out dashes)
+suppress gen_id 138, sig_id 4
+#Email Addresses
+suppress gen_id 138, sig_id 5
+#U.S. Phone Numbers
+suppress gen_id 138, sig_id 6
 #(spp_sip) Empty request URI
 suppress gen_id 140, sig_id 2
-#(spp_sip) Maximum dialogs within a session reached
-suppress gen_id 140, sig_id 27
 #(spp_sip) URI is too long
 suppress gen_id 140, sig_id 3
+#(spp_sip) Maximum dialogs within a session reached
+suppress gen_id 140, sig_id 27
 #(IMAP) Unknown IMAP4 command
 suppress gen_id 141, sig_id 1
 #(IMAP) Unknown IMAP4 response
 suppress gen_id 141, sig_id 2
-
+###
 #ET POLICY PE EXE or DLL Windows file download HTTP
 suppress gen_id 1, sig_id 2018959
 #ET POLICY HTTP traffic on port 443 (POST)
@@ -185,3 +218,29 @@ suppress gen_id 1, sig_id 2007638
 suppress gen_id 1, sig_id 2008794
 #ET POLICY TeamViewer Keep-alive inbound
 suppress gen_id 1, sig_id 2008795
+#APP-DETECT TeamViewer remote administration tool outbound connection attempt
+suppress gen_id 1, sig_id 34463
+#ET POLICY Dropbox DNS Lookup - Possible Offsite File Backup in Use
+suppress gen_id 1, sig_id 2020565
+#ET INFO JAVA - ClassID
+suppress gen_id 1, sig_id 2016360
+#ET INFO DYNAMIC_DNS HTTP Request to a *.dyndns.* domain
+suppress gen_id 1, sig_id 2013097
+#ET INFO Executable Retrieved With Minimal HTTP Headers - Potential Second Stage Download
+suppress gen_id 1, sig_id 2016538
+#ET P2P Bittorrent P2P Client User-Agent (Deluge 1.x.x)
+suppress gen_id 1, sig_id 2011704
+#ET POLICY Vulnerable Java Version 1.8.x Detected
+suppress gen_id 1, sig_id 2019401
+#ET MALWARE Adware.iBryte.B Install
+suppress gen_id 1, sig_id 2018194
+#ET POLICY HTTP traffic on port 443 (HEAD)
+suppress gen_id 1, sig_id 2013927
+#ET POLICY Possible IP Check api.ipify.org
+suppress gen_id 1, sig_id 2019512
+#ET POLICY BingBar ToolBar User-Agent (BingBar)
+suppress gen_id 1, sig_id 2013715
+#ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 647
+suppress gen_id 1, sig_id 2523293
+#ET INFO JAVA - document.createElement applet
+suppress gen_id 1, sig_id 2015707
