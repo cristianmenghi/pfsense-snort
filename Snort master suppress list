@@ -259,7 +259,7 @@ suppress gen_id 1, sig_id 2015707
 #ET TOR Known Tor Exit Node UDP Traffic group 89
 #suppress gen_id 1, sig_id 2520177
 #ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 89
-suppress gen_id 1, sig_id 2522177
+#suppress gen_id 1, sig_id 2522177
 #ET DNS Non-DNS or Non-Compliant DNS traffic on DNS port Reserved Bit Set - Likely Kazy
 #suppress gen_id 1, sig_id 2014703
 #ET DNS Non-DNS or Non-Compliant DNS traffic on DNS port Opcode 8 through 15 set - Likely Kazy
