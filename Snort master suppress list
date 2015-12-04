@@ -146,7 +146,7 @@ suppress gen_id 124, sig_id 3
 suppress gen_id 125, sig_id 2
 #(ssp_ssl) Invalid Client HELLO after Server HELLO Detected
 suppress gen_id 137, sig_id 1
-## Sensitive Data disable
+##SENSITIVE DATA DISABLE##
 #Credit Card Numbers
 suppress gen_id 138, sig_id 2
 #U.S. Social Security Numbers (with dashes)
@@ -230,6 +230,10 @@ suppress gen_id 1, sig_id 2013097
 suppress gen_id 1, sig_id 2016538
 #ET P2P Bittorrent P2P Client User-Agent (Deluge 1.x.x)
 suppress gen_id 1, sig_id 2011704
+#ET POLICY Unsupported/Fake Internet Explorer Version MSIE 5.
+suppress gen_id 1, sig_id 2016870
+#ET POLICY Vulnerable Java Version 1.6.x Detected
+suppress gen_id 1, sig_id 2011582
 #ET POLICY Vulnerable Java Version 1.8.x Detected
 suppress gen_id 1, sig_id 2019401
 #ET MALWARE Adware.iBryte.B Install
@@ -240,7 +244,45 @@ suppress gen_id 1, sig_id 2013927
 suppress gen_id 1, sig_id 2019512
 #ET POLICY BingBar ToolBar User-Agent (BingBar)
 suppress gen_id 1, sig_id 2013715
-#ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 647
-suppress gen_id 1, sig_id 2523293
+#ET POLICY User-Agent (Launcher)
+suppress gen_id 1, sig_id 2010645
 #ET INFO JAVA - document.createElement applet
 suppress gen_id 1, sig_id 2015707
+
+##OPTIONAL RULES BELOW##
+##UNCOMMENT SUPPRESS LINE TO ENABLE##
+
+#(ftp_telnet) FTP bounce attempt
+#suppress gen_id 125, sig_id 8
+#ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 647
+#suppress gen_id 1, sig_id 2523293
+#ET TOR Known Tor Exit Node UDP Traffic group 89
+#suppress gen_id 1, sig_id 2520177
+#ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 89
+suppress gen_id 1, sig_id 2522177
+#ET DNS Non-DNS or Non-Compliant DNS traffic on DNS port Reserved Bit Set - Likely Kazy
+#suppress gen_id 1, sig_id 2014703
+#ET DNS Non-DNS or Non-Compliant DNS traffic on DNS port Opcode 8 through 15 set - Likely Kazy
+#suppress gen_id 1, sig_id 2014702
+#FILE-PDF Adobe Acrobat Reader incomplete JP2K image geometry exploit attempt
+#suppress gen_id 1, sig_id 25459
+#ET WEB_CLIENT Possible HTTP 500 XSS Attempt (External Source)
+#suppress gen_id 1, sig_id 2010525
+#ET POLICY SSLv3 outbound connection from client vulnerable to POODLE attack
+#suppress gen_id 1, sig_id 2019416
+#ET POLICY Windows 98 User-Agent Detected - Possible Malware or Non-Updated System
+#suppress gen_id 1, sig_id 2007695
+#ET SCAN Potential SSH Scan OUTBOUND
+#suppress gen_id 1, sig_id 2003068
+#ET MALWARE W32/OpenCandy Adware Checkin
+#suppress gen_id 1, sig_id 2014122
+#ET INFO DYNAMIC_DNS Query to Abused Domain *.mooo.com
+#suppress gen_id 1, sig_id 2015633
+#ET INFO DYNAMIC_DNS HTTP Request to Abused Domain *.mooo.com
+#suppress gen_id 1, sig_id 2015634
+#ET INFO DYNAMIC_DNS HTTP Request to a no-ip Domain
+#suppress gen_id 1, sig_id 2013744
+#ET INFO DYNAMIC_DNS HTTP Request to a dns-stuff.com Domain *.dns-stuff.com
+#suppress gen_id 1, sig_id 2014867
+#ET INFO DYNAMIC_DNS Query to dns-stuff.com Domain *.dns-stuff.com
+#suppress gen_id 1, sig_id 2014868
